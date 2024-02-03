@@ -2,20 +2,26 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   loading: false,
-  originalUrl: "",
-  shortUrl: "",
-  error: "",
+  originalUrl: "https://github.com/Totalpad",
+  shortUrl: "https://is.gd/zNYio0",
+
 };
 
 export const shortSlice = createSlice({
   name: "shortLink",
   initialState,
   reducers: {
-    getShortLink: (state, action) => {
+    setOriginalUrl: (state, action) => {
       state.originalUrl = action.payload;
+    },
+    setShortUrl: (state, action) => {
+      state.shortUrl = action.payload;
+    },
+    setLoading: (state, action) => {
+      state.loading = action.payload;
     },
   },
 });
 
-export const { getShortLink } = shortSlice.actions;
+export const { setOriginalUrl, setShortUrl, setLoading } = shortSlice.actions;
 export default shortSlice.reducer;

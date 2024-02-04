@@ -14,8 +14,8 @@ function HeroSection() {
 
           <div className="mx-auto lg:mx-0">
             <a
-              href="#"
-              className=" bg-cyan hover:shadow-darkViolet rounded-full px-10 py-5 text-2xl font-bold text-white transition-all duration-150 hover:scale-105 hover:opacity-80 hover:shadow-md lg:py-4"
+              href="#link-form"
+              className=" rounded-full bg-cyan px-10 py-5 text-2xl font-bold text-white transition-all duration-150 hover:scale-105 hover:opacity-80 hover:shadow-md hover:shadow-darkViolet lg:py-4"
             >
               Get Started
             </a>
@@ -23,7 +23,7 @@ function HeroSection() {
         </div>
 
         {/* <HeroImg /> */}
-        <div className=" md:w-180 mx-auto mb-24 lg:mb-0 lg:w-1/2">
+        <div className=" mx-auto mb-24 md:w-180 lg:mb-0 lg:w-1/2">
           <img src={img} alt="" />
         </div>
       </div>

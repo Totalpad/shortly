@@ -86,7 +86,7 @@ function ShortenSection() {
             type="text"
             {...register("originalLink", { required: "Link is required" })}
             placeholder="Shorten a link is here"
-            className="flex-1 rounded-lg border-2 p-3 placeholder-yellow-500 focus:outline-none"
+            className={`flex-1 rounded-lg border-2 p-3 placeholder-yellow-500 focus:outline-none ${errors?.originalLink && ` border-red`}`}
             disabled={loading}
           />
           <button className=" rounded-lg bg-cyan px-10 py-3 text-white duration-150 hover:bg-cyanLight active:opacity-75 md:py-2 ">
